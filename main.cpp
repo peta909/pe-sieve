@@ -257,7 +257,7 @@ int main(int argc, char *argv[])
 		std::cout << "Output filter: " << translate_out_filter(args.out_filter) << std::endl;
 		std::cout << "Dump mode: " << translate_dump_mode(args.dump_mode) << std::endl;
 	}
-	ProcessScanReport* report = scan_process(args);
+	ProcessScanReport* report = scan_process(args); //Real Work start here!
 	if (report != nullptr) {
 		print_report(*report, args);
 		delete report;
